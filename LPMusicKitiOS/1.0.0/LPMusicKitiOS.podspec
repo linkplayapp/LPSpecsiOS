@@ -34,12 +34,13 @@ TODO: Add long description of the pod here.
    ss.source_files = 'LPMusicKitiOS/Third/CocoaHTTP/**/*' 
   end
   s.subspec 'KissXML' do |ss|
+   ss.private_header_files = 'LPMusicKitiOS/Third/KissXML/Private/*.h'
    ss.source_files = 'LPMusicKitiOS/Third/KissXML/**/*' 
    ss.library      = 'xml2'
    ss.xcconfig     = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2'}
   end
 
-  #s.static_framework = true 
+  s.static_framework = true 
   s.libraries = 'c++'
   s.ios.vendored_framework = '*.framework'
   s.dependency 'AFNetworking', '~> 3.0'
