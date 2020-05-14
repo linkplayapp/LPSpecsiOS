@@ -32,7 +32,7 @@ TODO: SDK contains the number of local songs, singers and albums.
 
   s.frameworks = 'AVFoundation','MediaPlayer'
   s.dependency 'LPMDPKitiOS'
-
+  s.resources = 'LPMSMediaLibraryiOS/Resource/*'
   s.subspec 'Framework' do |ss|
    ss.ios.vendored_framework = '*.framework'
   end
